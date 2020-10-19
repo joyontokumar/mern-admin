@@ -1,24 +1,17 @@
 import React, { Component } from 'react'
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
-import dashboard from '../adminPanel/dashboard/dashboard'
-import addPost from '../adminPanel/addPost/addPost'
-import editPost from '../adminPanel/editPost/editPost'
-import allPost from '../adminPanel/allPost/allPost'
-import gallery from '../adminPanel/gallery/gallery'
-import category from '../adminPanel/addCategory/addCategory'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import Dashboard from '../adminPanel/dashboard/dashboard'
+import AddDoctor from '../adminPanel/addDoctor/addDoctor'
+import AddFaculty from '../adminPanel/addCategory/addCategory'
 class appRoute extends Component {
-    render(){
-        return(
+    render() {
+        return (
             <Router>
-                    <Switch>
-                        <Route exact path="/" component={dashboard} />
-                        <Route path="/addpost" component={addPost} />
-                        <Route path="/editpost/post=:id&action=edit" component={editPost} />
-                        <Route path="/allpost" component={allPost} />
-                        <Route path="/addcategory" component={category} />
-                        <Route path="/gallery" component={gallery} />
-
-                    </Switch>
+                <Switch>
+                    <Route exact path="/" component={Dashboard} />
+                    <Route path="/adddoctor" component={AddDoctor} />
+                    <Route path="/addfaculty" component={AddFaculty} />
+                </Switch>
             </Router>
         )
     }

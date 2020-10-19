@@ -1,19 +1,19 @@
-import React, {Component} from 'react'
+import React, { Component } from 'react'
 import Aux from '../../hoc/_Aux'
 class Footer extends Component {
-    render(){
-        return(
+    render() {
+        return (
             <Aux>
-            <footer className="sticky-footer">
-            <div className="container">
-                <div className="text-center">
-                <small>Copyright © Your Website 2018</small>
-                </div>
-            </div>
-            </footer>
-            <a className="scroll-to-top rounded" href="#page-top">
-            <i className="fa fa-angle-up"></i>
-            </a>
+                <footer className="sticky-footer">
+                    <div className="container">
+                        <div className="text-center">
+                            <small>Copyright © invariant 2020</small>
+                        </div>
+                    </div>
+                </footer>
+                <a className="scroll-to-top rounded" href="#page-top">
+                    <i className="fa fa-angle-up"></i>
+                </a>
             </Aux>
         )
     }

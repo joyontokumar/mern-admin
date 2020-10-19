@@ -1,10 +1,9 @@
 import React, { Component } from 'react'
 import App from '../App'
-import Addcatform from './addCatForm'
-import Showcat from './showCat'
 import Footer from '../Footer/Footer'
-import { NavLink } from 'react-router-dom'
-class category extends Component {
+import Form from './Form'
+import { NavLink } from 'react-router-dom';
+class addPost extends Component {
   render() {
     return (
       <App>
@@ -14,17 +13,11 @@ class category extends Component {
               <li className="breadcrumb-item">
                 <NavLink to="/">Dashboard</NavLink>
               </li>
-              <li className="breadcrumb-item active">Add Category</li>
+              <li className="breadcrumb-item active">Add Doctor</li>
             </ol>
-            <div className="container">
+            <div className="container-fluid">
               <div className="row">
-                <div className="col-md-4">
-                  <Addcatform />
-                </div>
-                <div className="col-md-8">
-                  <Showcat />
-                </div>
-                {/* <ToastContainer /> */}
+                <Form />
               </div>
             </div>
           </div>
@@ -33,6 +26,6 @@ class category extends Component {
       </App>
     )
   }
-}
 
-export default category
+}
+export default addPost

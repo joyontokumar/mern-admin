@@ -1,9 +1,9 @@
-import React, {Component} from 'react'
+import React, { Component } from 'react'
 import Aux from '../../hoc/_Aux'
 
 class Showcat extends Component {
-    render(){
-        return(
+    render() {
+        return (
             <Aux>
                 <table class="table table-bordered">
                     <thead>
@@ -14,8 +14,8 @@ class Showcat extends Component {
                             <th>Count</th>
                             <th>Action</th>
                         </tr>
-                        </thead>
-                        <tbody>
+                    </thead>
+                    <tbody>
                         <tr>
                             <td>John</td>
                             <td>Doe</td>
@@ -23,8 +23,8 @@ class Showcat extends Component {
                             <td>2</td>
                             <td><button type="button" className="btn btn-outline-primary btn-sm">Edit</button>&nbsp;<button type="button" className="btn btn-outline-danger btn-sm">Delete</button></td>
                         </tr>
-                        </tbody>
-                    </table>
+                    </tbody>
+                </table>
             </Aux>
         )
     }
