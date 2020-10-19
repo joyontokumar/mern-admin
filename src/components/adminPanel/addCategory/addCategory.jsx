@@ -9,14 +9,22 @@ class category extends Component {
     return (
       <App>
         <div className="content-wrapper">
-          <div className="container-fluid">
-            <ol className="breadcrumb">
-              <li className="breadcrumb-item">
-                <NavLink to="/">Dashboard</NavLink>
-              </li>
-              <li className="breadcrumb-item active">Add Category</li>
-            </ol>
-            <div className="container">
+          <div className="bredcrum-area">
+            <div className="container-fluid">
+              <div className="row">
+                <div className="col-lg-12">
+                  <ol className="breadcrumb">
+                    <li className="breadcrumb-item">
+                      <NavLink to="/">Dashboard</NavLink>
+                    </li>
+                    <li className="breadcrumb-item active">Add Category</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="add-category-content">
+            <div className="container-fluid">
               <div className="row">
                 <div className="col-md-4">
                   <Addcatform />
@@ -24,13 +32,12 @@ class category extends Component {
                 <div className="col-md-8">
                   <Showcat />
                 </div>
-                {/* <ToastContainer /> */}
               </div>
             </div>
           </div>
           <Footer />
         </div>
-      </App>
+      </App >
     )
   }
 }

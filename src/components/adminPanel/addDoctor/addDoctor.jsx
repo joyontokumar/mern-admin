@@ -8,22 +8,32 @@ class addPost extends Component {
     return (
       <App>
         <div className="content-wrapper">
-          <div className="container-fluid">
-            <ol className="breadcrumb">
-              <li className="breadcrumb-item">
-                <NavLink to="/">Dashboard</NavLink>
-              </li>
-              <li className="breadcrumb-item active">Add Doctor</li>
-            </ol>
+          <div className="breadcrum-area">
             <div className="container-fluid">
               <div className="row">
-                <Form />
+                <div className="col-lg-12">
+                  <ol className="breadcrumb">
+                    <li className="breadcrumb-item">
+                      <NavLink to="/">Dashboard</NavLink>
+                    </li>
+                    <li className="breadcrumb-item active">Add Doctor</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="add-doctor-content">
+            <div className="container-fluid">
+              <div className="row">
+                <div className="col-lg-12">
+                  <Form />
+                </div>
               </div>
             </div>
           </div>
           <Footer />
         </div>
-      </App>
+      </App >
     )
   }
 

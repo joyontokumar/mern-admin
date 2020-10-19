@@ -8,15 +8,21 @@ class dashboard extends Component {
     return (
       <App>
         <div className="content-wrapper">
-          <div className="container-fluid">
-            <ol className="breadcrumb">
-              <li className="breadcrumb-item active">My Dashboard</li>
-            </ol>
-            <IconCards />
+          <div className="breadcrum-area">
+            <div className="container-fluid">
+              <div className="row">
+                <div className="col-lg-12">
+                  <ol className="breadcrumb">
+                    <li className="breadcrumb-item active">My Dashboard</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
           </div>
+          <IconCards />
           <Footer />
         </div>
-      </App>
+      </App >
     )
   }
 
